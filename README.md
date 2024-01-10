@@ -1,5 +1,3 @@
-### Backend With Node (Adonis)
-
 ## Build Setup
 
 Install [Docker Compose](https://docs.docker.com/compose/install/).
