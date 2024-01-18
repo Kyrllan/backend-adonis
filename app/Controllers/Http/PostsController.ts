@@ -14,9 +14,7 @@ export default class PostsController {
     const data = await request.validate(StoreValidator)
 
     const user = await auth.authenticate()
-
     const post = await Post.create({ auhorId: user.id, ...data })
-
     await post.preload('author')
 
     return post
@@ -38,9 +36,7 @@ export default class PostsController {
     const data = await request.validate(UpdateValidator)
 
     post.merge(data)
-
     await post.save()
-
     await post.preload('author')
 
     return post
