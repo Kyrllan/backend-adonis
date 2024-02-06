@@ -1,6 +1,6 @@
 ## Build Setup
 
-Install [Docker Compose](https://docs.docker.com/compose/install/).
+# Install [Docker Compose](https://docs.docker.com/compose/install/).
 
 ```bash
 # Create container with MySQL
